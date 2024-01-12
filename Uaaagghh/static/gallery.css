@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Cursive";
+    src: url("Gelato.ttf");
+}
+
+.topi{
+    font-family:"Cursive";
+    width:100%; position:absolute; top:10%; height:10%; color:palevioletred; text-align:center; font-size:400%
+}
+
+input{
+    height:1.8vw;
+    width:30%;
+    position:absolute;
+    left:35%;
+}

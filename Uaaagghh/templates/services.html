@@ -1,0 +1,41 @@
+{% load static %}
+<body onscroll="myfunc()">
+    
+    <link rel="stylesheet" href="{% static 'services.css' %}">
+<div class="non">  
+    <div class="image1">
+        <img src="/{{ cat.image }}" class="image">
+    </div>
+</div>
+<div class="sa">
+    <h1 class="h1a">{{ cat.cateogary }} Services</h1>
+</div>
+<div id="servicesa">
+    {% for i in ser %}
+    
+    <div class="serss">
+        
+                <div class="Cateogary" >
+                    <div class="container">
+                    <a href="/services/{{ i.id }}" class="nones"><img src="/{{ i.image }}" alt="{{ i.cateogray }}" class="imageuag"></a>
+                    </div> 
+                </div>
+                <div class="done">
+                    <br>
+                    <br>
+                <b>{{ i.name }}</b>
+                <br>
+                <b> Rs. {{i.price}}</b>
+                </div>
+            </a>
+    </div>
+    
+    
+    {% endfor %}
+    <div class="seperator">
+    </div>
+</div>
+
+{% include 'base.html' %}
+
+</body>

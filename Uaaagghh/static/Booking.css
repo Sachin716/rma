@@ -1,0 +1,27 @@
+
+
+    @font-face {
+        font-family: "Cursive";
+        src: url("Gelato.ttf");
+    }
+
+    .Book{
+        text-align:center;
+        margin-left:10%;
+        margin-top:15%;
+        width:80%;
+        height:40%;
+    }
+
+    h1{
+        font-family:"Cursive";
+        color:palevioletred
+    }
+    h3{
+        font-family:sans-serif;
+        color:white;
+    }
+    body{
+        background-color:black;
+    }
+

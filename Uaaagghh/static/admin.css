@@ -1,0 +1,121 @@
+
+    .Nav{
+        position:fixed;
+        top:0%;
+        height:5%;
+        width:100%;
+        left:0%;
+        background-color:lightgreen;
+    }
+
+    .log{
+        color:white;
+        position:absolute;
+        font-size:150%;
+        top:20%;
+        left:2%;
+        text-decoration:none;
+        font-family:sans-serif;
+    }
+
+    p{
+        position:absolute;
+        right:1%;
+        top:1%;
+        font-family:sans-serif;
+    }
+
+    .Booking{
+        transition-duration:0.5s;
+        position:absolute;
+        top:15%;
+        width:90%;
+        height:5%;
+        box-shadow: 0px 0px 10px inset darkblue;
+        left:5%;
+        background-color:aqua;
+    }
+
+    .Booking:hover{
+        cursor:pointer;
+    }
+
+    .Book-items{
+        transition-duration:0.5s;
+        position:absolute;
+        top:20%;
+        width:90%;
+        height:0%;
+        left:5%;
+        overflow:hidden;
+        background-color:white;
+        color:black;
+    }
+
+    .Appoint{
+        transition-duration:0.5s;
+        position:absolute;
+        top:21%;
+        width:90%;
+        height:5%;
+        box-shadow: 0px 0px 10px inset darkblue;
+        left:5%;
+        background-color:aqua;
+    }
+
+    .Appoint:hover{
+        cursor:pointer;
+    }
+
+    .app-items{
+        transition-duration:0.5s;
+        position:absolute;
+        top:26%;
+        width:90%;
+        height:0%;
+        left:5%;
+        overflow:hidden;
+        background-color:white;
+        color:black;
+    }
+
+
+    .Aitem{
+        width:100%;
+        height:5%;
+        font-family:sans-serif;
+        margin-top:1%;
+        border-bottom-style:solid;
+        border-width:2px;
+    }
+
+    .Aop{
+        position:absolute;
+        left:1%;
+        font-family:sans-serif;
+    }
+
+    .Ar{
+        position:absolute;
+        right:1%;
+        font-family:sans-serif;
+    }
+
+    .A3{
+        position:absolute;
+        right:1%;
+        font-family:sans-serif;
+    }
+
+    table{
+        width:100%;
+        border-collapse:seperate;
+    }
+
+    td{
+        text-align:center;
+        border-bottom-style:solid;
+        height:10%;
+        border-width:1px;
+        
+    }

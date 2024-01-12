@@ -1,0 +1,28 @@
+{% load static %}
+<head>
+    <title>Ruchika Makeovers</title>
+</head>
+<body onscroll="myfunc()">
+    
+    
+    <div class="appointap">
+        <div class="navap">
+            <h1 style="text-align:center; color:palevioletred; font-family:'Cursive';" class="h1">Book Service for {{ser.name}} </h1>
+        </div>
+        <div class="imapdv">
+        <img src="/{{ser.image}}" class="imgap">
+        </div>
+        <div class="contentap">
+            <form method="POST">
+                {% csrf_token %}
+                <input type="text" name="Name" class="Name" required placeholder="Enter your Name">
+                <input type="tel" name="Number" class="Number" required placeholder="Enter your Mob Number"> 
+                <input type="text" name="address" class="Email" required placeholder="Address">
+                <input type="submit" id="sub">
+            </form>
+        </div>
+    </div>    
+    <div class="seperator"></div>
+    <link rel="stylesheet" href="{% static 'hap.css' %}">
+    {% include 'base.html' %}
+</body>

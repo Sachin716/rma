@@ -1,0 +1,20 @@
+{% load static %}
+<html>
+    <head>
+        <title> RM Academy </title>
+        <link rel="stylesheet" href="{% static 'gallery.css' %}">
+    </head>
+    <body style="overflow-x:hidden;">
+        
+    <div class="topi" style="width:100%; position:absolute; top:10%; height:10%; color:palevioletred; text-align:center; font-size:400%">
+        Gallery
+    </div>
+    <div style="width:80%; margin-left:10%; margin-top:20%;">
+    {% for i in gall %}
+    <img src="{{i.image}}" style="width:100%;">
+    {% endfor %}
+    <div class="seperator"></div>
+    </div>
+{% include 'base.html' %}
+</body>    
+</html>

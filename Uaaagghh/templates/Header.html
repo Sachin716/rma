@@ -1,0 +1,33 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'home.css' %}">
+
+<div class="NavBar" >
+    <div class="lLogo" ><img src="{% static 'RM.png' %}"  class="text">
+    <div class="hider"></div>
+    <img class="logo" src="{% static 'RM2.png' %}"  >
+    
+
+    <div class="bar">
+        <div class="c1" style="width:25%;" >
+           <a class="x" href="{% url 'home' %}#about-us">About us</a>
+        </div>
+        <div class="c2">
+            <a class="x">Gallery</a>
+        </div>
+        <div class="c3">
+            <a class="x" href="{% url 'home' %}#services">Services</a>
+        </div>    
+        <div class="c4">
+            <a class="x" href="{% url 'appoint' %}">Appointment</a>
+        </div>
+        <div class="c5" style="width:25%;">
+            <a class="x">Contact Us</a>
+        </div>
+    
+    </div>
+    </div>
+
+</div>
+
+
+<script src="{% static 'home.js' %}"></script>

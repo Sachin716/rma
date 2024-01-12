@@ -1,0 +1,110 @@
+@media (min-width:1090px){
+
+    .seperator{
+        margin-top:30%;
+        
+    }
+
+.appointap{
+    position:absolute;
+    overflow:hidden;
+    height:70%;
+    width:70%;
+    top:10%;
+    left:15%;
+}
+.imapdv{
+    position:absolute;
+    left:0%;
+    height:80%;
+    top:15%;
+    width:48%;
+    align-items: center;
+
+}
+
+.imgap{
+    width:45%;
+}
+
+input{
+    position:absolute;
+    width:40%;
+    height:5%;
+    left:50%;
+    
+}
+
+.Name{
+    top:35%;
+}
+
+.Number{
+    top:45%;
+}
+.Email{
+    top:55%;
+}
+
+#Sub{
+    top:65%;
+}
+
+}
+@media (max-width:1089px){
+    .seperator{
+        margin-top:170%;
+    }
+
+    .appointap{
+        position:absolute;
+        overflow:hidden;
+        height:100%;
+        width:70%;
+        top:10%;
+        left:15%;
+    }
+    .imapdv{
+        position:absolute;
+        left:0%;
+        height:80%;
+        top:15%;
+        width:48%;
+        align-items: center;
+    
+    }
+    
+    .imgap{
+        width:100%;
+    }
+    
+    input{
+        position:absolute;
+        width:80%;
+        height:5%;
+        left:10%;
+        
+    }
+    
+    .Name{
+        top:35%;
+    }
+    
+    .Number{
+        top:45%;
+    }
+    .Email{
+        top:55%;
+    }
+    
+    #Sub{
+        top:65%;
+    }
+
+    .contentap{
+        position:absolute;
+        width:100%;
+        height:50%;
+    }
+    
+}

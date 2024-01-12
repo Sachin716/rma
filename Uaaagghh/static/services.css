@@ -1,0 +1,103 @@
+@media (min-width:1090px){
+
+    @font-face {
+        font-family: "Cursive";
+        src: url("Gelato.ttf");
+    }
+
+    .non{
+        position:absolute;
+        left:15%;
+        top:2%;
+        width:70%;
+        height:90%;
+        overflow:hidden;
+        border-style:solid;
+        border-color:palevioletred;
+        border-width:2px;
+
+    }
+
+    .image{
+        position:absolute;
+        width:100%;
+        top:-10%;
+    }
+
+    body{
+        background-color:black;
+        overflow-x:hidden;
+    }
+    #servicesa{
+        position:absolute;
+        top:120%;
+        left:10%;
+        width:80%;
+    }
+
+    .h1a{
+        color:palevioletred;
+        font-family:"Cursive";
+    }
+
+    .sa{
+        position:absolute;
+        top:105%;
+        height:10%;
+        width:100%;
+        text-align:center;
+    }
+
+}
+
+@media (max-width:1090px){
+
+    @font-face {
+        font-family: "Cursive";
+        src: url("Gelato.ttf");
+    }
+
+    .non{
+        position:absolute;
+        left:1%;
+        top:10%;
+        width:98%;
+        height:90%;
+        overflow:hidden;
+        border-style:solid;
+        border-color:palevioletred;
+        border-width:2px;
+
+    }
+
+    .image{
+        position:absolute;
+        height:100%;
+        top:0%;
+    }
+
+    body{
+        background-color:black;
+        overflow-x:hidden;
+    }
+    #servicesa{
+        position:absolute;
+        top:120%;
+        left:10%;
+        width:80%;
+    }
+
+    .h1a{
+        color:palevioletred;
+        font-family:"Cursive";
+    }
+
+    .sa{
+        position:absolute;
+        top:105%;
+        height:10%;
+        width:100%;
+        text-align:center;
+    }
+
+}

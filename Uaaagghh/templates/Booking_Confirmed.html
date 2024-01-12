@@ -1,0 +1,31 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'Booking.css' %}">
+<body onscroll="myfunc()">
+    
+    <div class="Book">
+        <h1>Booking Confirmed</h1>
+        {% for i in messages %}
+        <h3>Your Booking has been confirmed our associates will contact you soon thanks for choosing </h3>
+        <a href="/review"><h3> Leave us a review </h3></a>
+        {% endfor %}
+        <h3 class="red"> redirecting you to home page in 10 seconds </h3>
+        </div>
+        <div class="seperator">
+        </div>
+    {% include 'base.html' %}
+    
+</body>
+
+<script>
+    const red = document.querySelector(".red")
+    setTimeout(function(){red.textContent = "redirecting you to home page in 9 seconds"},1000)
+    setTimeout(function(){red.textContent = "redirecting you to home page in 8 seconds"},2000)
+    setTimeout(function(){red.textContent = "redirecting you to home page in 7 seconds"},3000)
+    setTimeout(function(){red.textContent = "redirecting you to home page in 6 seconds"},4000)
+    setTimeout(function(){red.textContent = "redirecting you to home page in 5 seconds"},5000)
+    setTimeout(function(){red.textContent = "redirecting you to home page in 4 seconds"},6000)
+    setTimeout(function(){red.textContent = "redirecting you to home page in 3 seconds"},7000)
+    setTimeout(function(){red.textContent = "redirecting you to home page in 2 seconds"},8000)
+    setTimeout(function(){red.textContent = "redirecting you to home page in 1 seconds"},9000)
+    setTimeout(function(){location.replace("/")},10000)
+</script>

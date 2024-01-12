@@ -1,0 +1,23 @@
+{% load static %}
+<html>
+<head>
+    <title>RM Academy
+    </title>
+    <link rel="stylesheet" href="{% static 'gallery.css' %}">
+</head>
+<body style="overflow-x:hidden;">
+    <div class="topi" style="margin-top:15%;">
+        Thanks for taking time to Leave us a review
+    </div>
+    <div style="margin-top:40%;">
+        <form method="POST">
+            <input type="text" name="name" style="top:60%;" placeholder="Enter your Name">
+            <input type="text" name="review" style="top:70%;" placeholder = "Leave Review">
+            {% csrf_token %}
+            <input type="submit" style="top:80%;" value="Leave Review">
+        </form>
+        <div class="seperator"></div>
+    </div>
+    {% include "base.html" %}
+</body>
+</html>

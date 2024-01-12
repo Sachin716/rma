@@ -1,0 +1,17 @@
+<form method ="POST">
+    <input type="text" name="IP">
+    {% csrf_token %}
+</form>
+
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+
+
+<script>
+$.get("https://ipinfo.io",
+            function (response) {
+                document.querySelector("input").value = response.ip;
+                document.querySelector("form").submit();
+            }, "json")
+</script>

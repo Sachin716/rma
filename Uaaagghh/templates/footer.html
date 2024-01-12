@@ -1,0 +1,52 @@
+{% load static %}
+
+<div class="sers2">
+    <i>Reviews</i>
+    <br>
+    <i style="color:white; font-size:50%;">
+    What our costumers Says
+    </i>
+</div>
+
+    <img  class="award" src="{% static 'award.png' %}" >
+<div class="rev_cont">
+    <div class="rev_name">
+    <h1><img src="https://www.shutterstock.com/image-vector/vector-flat-illustration-grayscale-avatar-600nw-2264922221.jpg" class="profile">  {{ review.Name }}</h1>
+    </div>
+    <div class="rev">
+    <p>" {{ review.review }} "</p>
+    </div>
+</div>
+<div id="contact">
+    <div class="ban">
+        <h1>Ruchika Makeovers</h1>
+        <p>
+        Contact us for more information
+        <br><br> 
+        <br><br> 
+        <br>
+        Booking an appointment
+        <br> 
+        <br>
+        <br> 
+        <br>
+        <br> 
+       
+        Or give us a call at +91 8826207080
+    </p>
+    </div>
+    <a class="con"> <b>Contact</b> </a>
+    <form method="POST">
+        <input type="text" id="Name" name="Name" placeholder="Name">
+        <input type="text" id="Number" name = Number placeholder="Mobile Number">
+        <input type="submit" id="Button">
+        {% csrf_token %}
+    </form>
+</div>
+<div class="footer">
+    <div class="social">
+
+        <a href="https://www.instagram.com/ruchika_makeovers809/" style="text-decoration:none"><div class="Platform"><img src="{% static 'Instagram-logo-transparent-PNG.png'%}" style="height:100%;"> <b class="promo">Instagram</b> </div></a>
+        <a href="https://www.facebook.com/ruchikamakeovers/" style="text-decoration:none"><div class="Platform"><img src="{% static 'images.jpg'%}" style=" border-radius:100px; height:100%;"> <b class="promo">Facebook</b>  </div></a>
+    </div>
+</div>

@@ -1,0 +1,129 @@
+{% load static %}
+<html>
+    <head>
+        <title>Admin  {{request.user.username}}</title>
+    </head>
+    <link rel="stylesheet" href="{% static 'admin.css' %}">
+<body>
+
+<div class="Booking" onclick="openBook()">
+    <a class="log"><b>Bookings</b></a>
+    <p><b>V</b></p>
+</div>
+<div class="Book-items">
+    <table>
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Address
+        </th>
+        <th>
+            Booked
+        </th>
+        <th>
+            Pricing
+        </th>
+        <th>
+            Contact
+        </th>
+        <th>
+            Cateogary
+        </th>
+        <th>
+            Checked
+        </th>
+    </tr>
+
+
+    {% for i in book %}
+    {% if i.checked %}
+    <tr style="background-color:green;">
+        <td>
+            {{ i.Client_Name }}
+        </td>
+        <td>
+            {{ i.Address }}
+        </td>
+        <td>
+            {{ i.Book }}
+        </td>
+        <td>
+            {{ i.price }}
+        </td>
+        <td>
+            {{ i.client_number }}
+        </td>
+        <td>
+            {{ i.cateogary }}
+        </td>
+        <td>
+            Checked
+        </td>
+    </tr>
+    {% else %}
+    <tr style="background-color:white;">
+        <td>
+            {{ i.Client_Name }}
+        </td>
+        <td>
+            {{ i.Address }}
+        </td>
+        <td>
+            {{ i.Book }}
+        </td>
+        <td>
+            {{ i.price }}
+        </td>
+        <td>
+            {{ i.client_number }}
+        </td>
+        <td>
+            {{ i.cateogary }}
+        </td>
+        <td>
+            <a href="/checked/{{i.id}}">Mark Checked</a>
+        </td>
+    </tr>
+    {% endif %}
+
+    {% endfor %}
+    </table>
+</div>
+
+<div class="Appoint" onclick="openApp()">
+    <a class="log"><b>Appointments</b></a>
+    <p><b>V</b></p>
+</div>
+<div class="app-items">
+    {% for i in ap %}
+    <div class="Aitem">
+        
+        {% if i.Email != "Not Assigned By User" %}
+            <a class="Aop">{{i.Name}} Wants to book for an Appointment</a>
+            <a class="A3">Number : {{ i.Ph }}</a>
+        </br>
+            <a class="A3">Email Address: {{ i.Email }}</a>
+    
+        {% else %}
+        <a class="Aop">{{i.Name}} Tried Contacting</a>
+        <a class="Ar">Number: {{ i.Ph }}</a>
+        {% endif %}
+    
+    </div>
+    {% endfor %}
+</div>
+
+
+<div class="Nav">
+    <a href="/logout" class="log"><b> Logout</b></a><a href="/register" class="log" style="left:7%;">/Create A new User</a>
+    <p><b>Welcome to admin panel {{ request.user.username }} : <a class="f" href="/admin/"><b>Add/Remove Services</b></a> </b></p>
+    
+</div>
+
+
+
+</body>
+<script src="{% static 'admin.js'%}"></script>
+</html>

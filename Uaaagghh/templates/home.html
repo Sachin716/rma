@@ -1,0 +1,81 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>
+            RM Academy
+        </title>
+        
+    </head>
+    <body onscroll="myfunc()" style="overflow-x:hidden;">
+        
+        <div class="about_us"><br><i>Book An Appointment</i>
+        <a href="{% url 'appoint' %}"><div class="now">Book Now</div></a>
+        </div>
+        <div id="about-us">
+            <img src="https://img.freepik.com/free-photo/beautiul-woman-with-green-make-up-creative-color-nails_186202-7072.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1703203200&semt=ais" class="about-image">
+            <div class="text-about"> About Us</div>
+        </div>
+        
+        
+        <div class="banner">
+            <div class="image1">
+                <img src=" https://mksalonathome.in/img/banner/1.jpg " class="imgss">
+            </div>
+            <div class="image2">
+                <img src=" https://mksalonathome.in/img/banner/2.jpg " class="imgss">
+            </div>
+            <div class="image3">
+                <img src="https://mksalonathome.in/img/banner/3.jpg" class="imgss">
+            </div>
+            <div class="image4">
+                <img src="https://mksalonathome.in/img/banner/4.jpg" class="imgss">
+            </div>
+            <div class="image5" >
+                <img src="https://mksalonathome.in/img/banner/5.jpg" class="imgss">
+            </div>
+            <div class="image6">
+                <img src="https://mksalonathome.in/img/banner/6.jpg" class="imgss">
+            </div>
+        </div>
+
+        <div class="serrrrr">
+            <i>What we do</i>
+            <br>
+            <i style="color:white; font-size:50%;">Our Services</i>
+        </div>
+
+        <div id="services">
+            {% for i in cate %}
+            
+            <div class="serss">
+                
+                        <div class="Cateogary" >
+                            <div class="container">
+                            <a href="/cate/{{ i.cateogary }}" class="nones"><img src="{{ i.image }}" alt="{{ i.cateogray }}" class="imageuag"></a>
+                            </div> 
+                        </div>
+                        <div class="done">
+                            <br>
+                            <br>
+                        <b>{{ i.cateogary }}</b>
+                        </div>
+                    </a>
+            </div>
+            
+            
+            {% endfor %}
+            <div class="seperator">
+            </div>
+        </div>
+    
+
+        
+
+        {% include 'base.html' %}
+        
+    </body>
+
+    <script src="{% static 'banner.js' %}"></script>
+
+</html>
